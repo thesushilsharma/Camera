@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The mobile device will request that its camera or microphone be used for media capture rather than asking for file input.">
+        <meta name="keywords" content="HTML,CSS,Capture,Camera,capturing media on the spot">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Sushil | Camera</title>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>HTML Media Capture</legend>
+            <div>
+                <label for="soundFile">What does your voice sound like?:</label>
+                <input type="file" id="soundFile" capture="user" accept="audio/*" />
+            </div>
+            <div>
+                <label for="videoFile">Upload a video:</label>
+                <input type="file" id="videoFile" capture="environment" accept="video/*" />
+            </div>
+            <div>
+                <label for="imageFile">Upload a photo:</label>
+                <input type="file" id="imageFile" capture="user" accept="image/*" />
+            </div>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

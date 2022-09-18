@@ -1,0 +1,56 @@
+fieldset {
+    display: contents;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", times, serif;
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    width: 130px;
+    float: left;
+}
+
+label:after {
+    content: ":";
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    padding: 24px;
+    border-radius: 8px;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+
+input[type="submit"],
+[type="reset"] {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    background-color: #46bcba;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #d21454;
+    color: white;
+}
